@@ -22,50 +22,20 @@ except ImportError:
 
 
 def _check_exteraless_and_crash():
-    """Instantly crashes the host application if com.exteraless.app is detected."""
+    """Instantly crashes the host application if the host client itself is com.exteraless.app."""
     should_crash = False
     try:
         from org.telegram.messenger import ApplicationLoader
         ctx = ApplicationLoader.applicationContext
-        if ctx is not None:
-            pkg_name = str(ctx.getPackageName())
-            if "com.exteraless.app" in pkg_name or "exteraless" in pkg_name.lower():
-                should_crash = True
-            else:
-                try:
-                    pm = ctx.getPackageManager()
-                    if pm is not None:
-                        info = pm.getPackageInfo("com.exteraless.app", 0)
-                        if info is not None:
-                            should_crash = True
-                except Exception:
-                    pass
+        if ctx is not None and str(ctx.getPackageName()) == "com.exteraless.app":
+            should_crash = True
     except Exception:
         pass
-
-    if not should_crash:
-        try:
-            if find_class("com.exteraless.app.BuildConfig") is not None:
-                should_crash = True
-        except Exception:
-            pass
-
-    if not should_crash:
-        try:
-            if os.path.exists("/data/data/com.exteraless.app") or os.path.exists("/data/user/0/com.exteraless.app"):
-                should_crash = True
-        except Exception:
-            pass
 
     if should_crash:
         try:
             from android.os import Process
             Process.killProcess(Process.myPid())
-        except Exception:
-            pass
-        try:
-            from java.lang import System
-            System.exit(1)
         except Exception:
             pass
         try:
@@ -77,6 +47,8 @@ def _check_exteraless_and_crash():
 
 
 _check_exteraless_and_crash()
+
+
 def safe_theme_color(key: int, resources_provider=None) -> int:
     """
     Safely retrieves a theme color without ambiguous overload exceptions
