@@ -1,0 +1,13 @@
+zipFormat: eaf
+source: UnlimPinnedChats/src
+buildNameUncompiled: "UnlimPinnedChats-{version}"
+buildNameCompiled: "UnlimPinnedChats-{version}"
+ignoreAll:
+  - UnlimPinnedChats/.mandochka/cache/*
+compilationIgnore: []
+obfuscationConfig:
+  stripDocstrings: true
+  removeLogs: false
+  renameLocals: false
+dex:
+  enabled: false

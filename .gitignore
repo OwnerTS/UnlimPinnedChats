@@ -1,0 +1,7 @@
+builds/
+**/__pycache__/
+*.pyc
+*.tmp
+.mandochka/cache/
+UnlimPinnedChats/.mandochka/cache/
+UnlimPinnedChats/.mandochka/stats.yml

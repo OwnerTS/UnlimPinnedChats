@@ -1,0 +1,10 @@
+{
+  "plugin_name": "UnlimPinnedChats",
+  "plugin_description": "Неограниченное количество закреплений чатов во «Всех чатах» и папках.",
+  "loaded": "Плагин UnlimPinnedChats успешно загружен",
+  "unloaded": "Плагин UnlimPinnedChats выгружен",
+  "setting_synced_limit": "Лимит синхронизированных",
+  "setting_synced_subtext": "Закрепы на сервере (0 = не трогать облако)",
+  "setting_local_limit": "Лимит локальных",
+  "setting_local_subtext": "Максимальное число закрепов на устройстве"
+}

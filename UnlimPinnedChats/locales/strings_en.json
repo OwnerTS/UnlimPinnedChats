@@ -1,0 +1,10 @@
+{
+  "plugin_name": "UnlimPinnedChats",
+  "plugin_description": "Unlimited pinned chats in All Chats and Folders.",
+  "loaded": "UnlimPinnedChats plugin successfully loaded",
+  "unloaded": "UnlimPinnedChats plugin unloaded",
+  "setting_synced_limit": "Synced limit",
+  "setting_synced_subtext": "Pins on server (0 = keep cloud untouched)",
+  "setting_local_limit": "Local limit",
+  "setting_local_subtext": "Max pinned chats on this device"
+}

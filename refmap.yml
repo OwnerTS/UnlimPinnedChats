@@ -1,0 +1,5 @@
+metainfo: UnlimPinnedChats/meta.yml
+main: UnlimPinnedChats/src/main.pyc
+assets: UnlimPinnedChats/res
+strings: UnlimPinnedChats/locales
+mandochka: UnlimPinnedChats/.mandochka

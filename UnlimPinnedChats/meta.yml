@@ -1,0 +1,8 @@
+id: unlim_pinned_chats
+name: UnlimPinnedChats
+description: "{plugin_description}"
+version: "1.0"
+author: "@swagnonher"
+icon: aprelteamkontora/11
+app_version: ">=13.1.1"
+sdk_version: ">=1.4.3.8"
