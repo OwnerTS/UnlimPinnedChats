@@ -14,7 +14,7 @@
 
 ## Сборка
 
-Для сборки плагина используется [Mandochka](https://github.com/shareui/Mandochka):
+Для сборки плагина используется [Mandochka](https://pypi.org/project/mandochka):
 
 ```bash
 # Проверка совместимости с SDK
